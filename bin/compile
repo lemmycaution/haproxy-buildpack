@@ -35,7 +35,7 @@ compile_source() {
   if [ ! -f $CACHE_DIR/$ARCHIVE_DIR/haproxy ]; then
     echo "Compiling $ARCHIVE_DIR..."
     cd $CACHE_DIR/$ARCHIVE_DIR
-    make TARGET=linux2628 USE_KQUEUE=1 USE_POLL=1 USE_PCRE=1 USE_STATIC_PCRE=1 USE_OPENSSL=1 ADDLIB=-lcrypto
+    make TARGET=linux2628 USE_KQUEUE=1 USE_POLL=1 USE_PCRE=1 USE_STATIC_PCRE=1 PCREDIR=/usr/lib64 USE_OPENSSL=1 ADDLIB=-lcrypto
   fi
 }
 
