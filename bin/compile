@@ -47,6 +47,8 @@ get_source
 compile_source
 vendor_bin
 
+sudo apt-get install inotify-tools
+
 echo "-----> Done."
 
 exit 0
